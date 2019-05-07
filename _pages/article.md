@@ -1,5 +1,6 @@
 ---
 layout: archive
+layout: search
 permalink: /article/
 title: "Article"
 author_profile: true
