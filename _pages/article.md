@@ -5,6 +5,7 @@ title: "Article"
 author_profile: true
 header:
     image: "/images/fe.jpg"
+---
 
 
 {% include base_path %}
@@ -17,4 +18,3 @@ header:
     {% include archive-single.html %}
   {% endfor %}
 {% endfor %}
----
