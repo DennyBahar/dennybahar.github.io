@@ -4,7 +4,7 @@ permalink: /article/
 title: "Article"
 author_profile: true
 header:
-    image: "/images/fe.jpg"
+    image: "/images/fe.jpeg"
 ---
 
 
