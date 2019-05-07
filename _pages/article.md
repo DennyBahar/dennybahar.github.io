@@ -3,8 +3,6 @@ layout: archive
 permalink: /article/
 title: "Article"
 author_profile: true
-header:
-    image: "/images/fe.jpeg"
 ---
 
 

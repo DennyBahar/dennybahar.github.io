@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -64,7 +64,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
@@ -121,11 +121,11 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin-square"
+    - label: "LinkedIn"
+      icon: "fa fa-linkedin-square"
       url: "https://www.linkedin.com/in/dennybahar/"
-    - label: "GitHub"
-      icon: "DennyBahar"
+    - label: "DennyBahar"
+      icon: "fab fa-fw fa-github-square"
       url: "https://github.com/DennyBahar"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
