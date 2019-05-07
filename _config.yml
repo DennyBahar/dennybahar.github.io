@@ -122,7 +122,7 @@ author:
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin-in"
+      icon: "fab fa-fw fa-linkedin-in-square"
       url: "https://www.linkedin.com/in/dennybahar/"
     - label: "DennyBahar"
       icon: "fab fa-fw fa-github-square"
