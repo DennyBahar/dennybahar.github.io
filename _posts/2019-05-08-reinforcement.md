@@ -83,5 +83,5 @@ main()
 ```
 
 
-<img src="/images/2019-05-08-reinforcement/output_4_0.png",alt="policies">
+![policies](/images/2019-05-08-reinforcement/output.png){: .align-center}
 
