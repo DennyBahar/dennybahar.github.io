@@ -1,3 +1,4 @@
+---
 title: "About"
 permalink: /about/
 header:
@@ -5,3 +6,4 @@ header:
 
 I'm a student from SUTD specialize in Data Science.
 Interested in Machine Learning and Finance.
+---
