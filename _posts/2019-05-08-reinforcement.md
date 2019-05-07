@@ -83,10 +83,5 @@ main()
 ```
 
 
-![png](output_4_0.png)
+<img src="/images/2019-05-08-reinforcement/output_4_0.png",alt="policies">
 
-
-
-```python
-
-```
