@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Denny H. Bahar"
-  avatar           : "/images/bio-photo2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/bio-photo3.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Final year student from SUTD | Bachelor in Systems Engineering"
   location         : "Singapore"
   email            :
