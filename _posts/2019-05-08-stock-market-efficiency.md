@@ -2,26 +2,28 @@
 title: Stock Market Efficiency
 date: 2019-05-08
 tags: ["finance"]
-exerpt: "Exploring the dynamic of US stock market efficiency."
+excerpt: "Exploring the dynamic of US stock market efficiency."
 ---
 
 
 The Efficient Market Hypothesis (EMH) states all available information is already priced in market. This implies that past performance does not hold any clue as to what the future perfomance of the market will be.
-As a result, the market move randomly because  and there is no way to forecast its future performance.
+As a result, the market move randomly and there is no way to forecast its future performance.
 
-This article aim to explore efficiency of the US stock market. The S&P 500 monthly data from year 1871 to 2018 is used. The source of the data is from Robert Shiller and retrieved from https://datahub.io/core/s-and-p-500
+This article aim to explore efficiency of the US stock market. The S&P 500 monthly data from year 1871 to 2018 is used. The source of the data is from Robert Shiller and retrieved from <a href="https://datahub.io/core/s-and-p-500">here</a>
 
 ```python
 # read dataset
 sp500 = pd.read_csv("sp500.csv", index_col='Date', parse_dates=True)
-print(sp500.info())
+
 ```
+
+{{sp500.info()}}
 
 To measure the market efficiency, I calculate the 60 months (5 years) autocorrelation for this month return and previous month return. The interpretations of the autocorrelation are as follow:
 
-1. Zero correlation means future returns do not have relationship with past returns. Market is efficient.
-2. Positive correlation means future returns tend to move in the <u>same direction</u> as past returns. If the stock market increase in the previous month, then the stock market will more likely rise in the next month as well and vice versa.
-3. Negative correlation means futures returns tend to move in the <u>opposite direction</u> as past returns. If the stock market increase in the previous month, then the stock market will more likely to fall in the next month and vice versa.  
+1. <b>Zero correlation</b> means future returns have <u>no relationship</u> with past returns. Thus, Market is efficient.
+2. <b>Positive correlation</b> means future returns tend to move in the <u>same direction</u> as past returns. If the stock market increase in the previous month, then the stock market will more likely rise in the next month as well and vice versa.
+3. <b>Negative correlation</b> means futures returns tend to move in the <u>opposite direction</u> as past returns. If the stock market increase in the previous month, then the stock market will more likely to fall in the next month and vice versa.  
 
 ```python
 # monthly return
