@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Stock Market Efficiency
 date: 2019-05-08
 tags: ["finance"]
