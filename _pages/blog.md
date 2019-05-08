@@ -7,23 +7,23 @@ author_profile: true
 
 
 {% for post in (site.posts | sort: "date")  %}
-    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
-    {% if forloop.first %}
-    <h2 id="{{ this_year | slugify }}">{{this_year}}</h2>
-    <ul>
-    {% endif %}
+  {% if forloop.first %}
+  <h2 id="{{ this_year | slugify }}" class="archive_subtitle">{{this_year}}</h2>
+  <ul>
+  {% endif %}
 
-    {% include archive-single.html %}
+  {% include archive-single.html %}
 
-    {% if forloop.last %}
-    </ul>
-    {% else %}
-        {% if this_year != next_year %}
-        </ul>
-        <h2 id="{{ next_year | slugify }}">{{next_year}}</h2>
-        <ul>
-        {% endif %}
-    {% endif %}
+  {% if forloop.last %}
+  </ul>
+  {% else %}
+      {% if this_year != next_year %}
+      </ul>
+      <h2 id="{{ next_year | slugify }}" class="archive_subtitle">{{next_year}}</h2>
+      <ul>
+      {% endif %}
+  {% endif %}
 {% endfor %}
