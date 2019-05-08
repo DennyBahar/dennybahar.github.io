@@ -31,7 +31,7 @@
       {% endif %}
     </h2>
     {% if post.date %}
-    <p class="page_date"><i>{{ post.date | date: "%B %d, %Y" }}</i></p>
+    <p class="page_date"><i>{{ post.date | date: "%B %d, %Y" | markdownify | strip_html | truncate: 160 }}</i></p>
     {% endif %}
     {% if post.read_time %}
       <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
