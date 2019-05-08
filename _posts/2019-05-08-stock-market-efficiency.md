@@ -2,7 +2,7 @@
 title: "Stock Market Efficiency"
 date: 2019-05-08
 tags: [finance]
-excerpt: Explore the dynamic of US stock market efficiency
+excerpt: Explore the dynamic of US stock market efficiency.
 ---
 
 
