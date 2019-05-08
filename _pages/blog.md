@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 
-% for post in (site.posts | sort: "date")  %}
+{% for post in (site.posts | sort: "date")  %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
