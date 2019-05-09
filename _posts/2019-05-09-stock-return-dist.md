@@ -58,7 +58,7 @@ plt.tight_layout()
 ![png](/images/stock-return-dist_files/stock-return-dist_4_0.png)
 
 
-The normal distribution takes in mean and standard deviation as inputs. The t-distribution takes in mean, standard deviation and degree of freedom (df) as inputs. The t-distribution above use df = 1. It is obvious that the t-distribution has fatter tail than the normal distribution. As df increases, the tail of the t-distribution gets skinnier and eventually equal to the normal distribution when df -> $\infty$.
+The normal distribution takes in mean and standard deviation as inputs. The t-distribution takes in mean, standard deviation and degree of freedom (df) as inputs. The t-distribution above use df = 1. It is obvious that the t-distribution has fatter tail than the normal distribution. As df increases, the tail of the t-distribution gets skinnier and eventually equal to the normal distribution when df approaches infinity.
 
 
 ```python
