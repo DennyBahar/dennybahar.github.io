@@ -10,6 +10,14 @@ The Efficient Market Hypothesis (EMH) states that the market price reflect all t
 
 This article aim to explore the efficiency of US stock market. The S&P 500 monthly data from year 1871 to 2018 is used. The source of the data is from Robert Shiller and retrieved from <a href="https://datahub.io/core/s-and-p-500">here</a>
 
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set()
+```
+
 
 ```python
 sp500 = pd.read_csv("/dataset/sp500.csv", index_col='Date', parse_dates=True)

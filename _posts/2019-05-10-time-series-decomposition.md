@@ -10,7 +10,7 @@ Often times time series data have trends or seasonality or both. Hence, it is ad
 * <b>Additive:</b> $$y_t = T_t + S_t + \epsilon_t$$
 * <b>Multiplicative:</b> $$y_t = T_t \times S_t \times \epsilon_t$$
 
-Additive model is suitable for time series which trend and seasonality seems to be linear. Multiplicative model is suitable for time series which trend and seasonality seems to be non-linear (growing/falling over time).
+Additive model is suitable for time series which trend seems linear and seasonal variations are roughly constant. Multiplicative model is suitable for time series which trend seems non-linear (growing/falling over time) and seasonal variations change proportionally.
 
 The data to be used is the classic air passengers monthly data from year 1949 to 1960. The number of passengers is in thousands.
 
@@ -51,7 +51,7 @@ df.plot(figsize=(10,5))
 
 ![png](/images/time-series-decomposition_files/time-series-decomposition_2_1.png)
 
-From the image above, it is clear that the series exhibit an upward trend and there is seasonal pattern. The number of passengers peaked during summer and winter period (holiday seasons). Moreover, the trend and sesonality seems to grow non-linearly. Therefore, multiplicative model will be used. 
+From the image above, it is clear that the series exhibit an upward trend and there is seasonal pattern. The number of passengers peaked during summer period (holiday season). Moreover, the trend and sesonality seems to grow over time. Therefore, multiplicative model will be used. 
 
 
 ```python

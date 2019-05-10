@@ -12,6 +12,21 @@ There are various fat-tail distribution such as, student's t-distribution, paret
 
 
 ```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import scipy.stats as stats
+sns.set()
+```
+
+```python
+sp500 = pd.read_csv("dataset/sp500.csv",index_col='Date',parse_dates=True)
+print(sp500.info())
+```
+
+
+```python
 sp500['return'] = sp500['SP500'].pct_change()
 ret_arr = sp500['return'].values
 # remove nan
