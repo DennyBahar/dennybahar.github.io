@@ -1,8 +1,9 @@
 ---
 title: "Stock Market Returns Distribution"
 date: 2019-05-09
-tags: [finance]
+tags: [finance, statistic]
 excerpt: Explore the distribution of US stock market return.
+mathjax: true
 ---
 
 The normal distribution is most commonly used to model the returns of stock market. However, the market is well-known to exhibit rare disastrous event (black-swan event). To incorporate this into the model, fat-tail distribution is use.
@@ -58,8 +59,10 @@ plt.tight_layout()
 ![png](/images/stock-return-dist_files/stock-return-dist_4_0.png)
 
 
-The normal distribution takes in mean and standard deviation as inputs. The t-distribution takes in mean, standard deviation and degree of freedom (df) as inputs. The t-distribution above use df = 1. It is obvious that the t-distribution has fatter tail than the normal distribution. As df increases, the tail of the t-distribution gets skinnier and eventually equal to the normal distribution when df approaches infinity.
+The normal distribution takes in mean and standard deviation as inputs $$r \sim N(\mu, \sigma)$$. The t-distribution takes in mean, standard deviation and degree of freedom (df) as inputs $$r \sim T(\mu, \sigma, \nu)$$. The t-distribution above use df = 1. It is obvious that the t-distribution has fatter tail than the normal distribution. As df increases, the tail of the t-distribution gets skinnier and eventually equal to the normal distribution when df approaches infinity.
 
+
+<p style="text-align:center;"> $$\lim_{\nu \to \infty} T(\mu, \sigma, \nu) = N(\mu, \sigma)$$ </p>
 
 ```python
 fig,ax = plt.subplots(nrows=1, ncols=1, figsize=(12,8))
