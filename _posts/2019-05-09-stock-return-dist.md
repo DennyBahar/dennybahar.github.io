@@ -83,7 +83,7 @@ plt.tight_layout()
 ![png](/images/stock-return-dist_files/stock-return-dist_5_0.png)
 
 
-Most of the middle portion of the stock market returns can be describe using normal distribution while the tails are better described using the t-distribution. Hence, in most cases (about 99% of the time) the stock market returns can be modelled using normal distribution while 1% of the time the stock market is better modelled using t-distribution. Though 1% seems like a tiny probability, with large sample that 1% probability will definitely occur and when it happen, it will greatly hurt the unprepared. Therefore, it is prudent to not be mistaken between low probability with impossibility.
+Most of the middle portion of the stock market returns can be describe using normal distribution while the tails are better described using the t-distribution. Hence, in most cases (about 98% of the time) the stock market returns can be modelled using normal distribution while 2% of the time the stock market is better modelled using t-distribution. Though 2% seems like a tiny probability, with large sample that 1% probability will definitely occur and when it happen, it may harm (depending on the position direction) the unprepared. Therefore, it is prudent to not be mistaken between low probability with impossibility.
 
 Thus, there is no perfect way to model the stock market returns because:
 - Model using fat-tail distribution will incur lots of opportunity cost because you're being conservative but you're safeguard from the tail risk.
