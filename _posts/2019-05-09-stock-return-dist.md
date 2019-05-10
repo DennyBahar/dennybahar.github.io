@@ -87,6 +87,6 @@ Most of the middle portion of the stock market returns can be describe using nor
 
 Thus, there is no perfect way to model the stock market returns because:
 - Model using fat-tail distribution will incur lots of opportunity cost because you're being conservative but you're safeguard from the tail risk.
-- Model using normal distribution will accurate most of the time but you're exposed to tail risk.
+- Model using normal distribution will be accurate most of the time but you're exposed to tail risk which can be catastrophic.
 
-In conclusion, knowing when to use the type of distribution is what differentiate sophisticated trader from the average trader.
+In conclusion, knowing when and what distribution to use is what differentiate sophisticated trader from the average trader.
