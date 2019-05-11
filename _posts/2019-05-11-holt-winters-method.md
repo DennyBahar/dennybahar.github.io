@@ -6,7 +6,7 @@ excerpt: Holt-Winter method of time series forecasting
 mathjax: true
 ---
 
-Holt-Winter is a forecasting method which takes into account the trend and seasonal components of the series. Trend is also known as "gradient" or "rate of change" and seasonal is a repeating periodic fluctuations. Thus, it is inapproriate for system which exhibit non-periodic fluctuations (e.g. stock market).
+Holt-Winter is a forecasting method which takes into account the trend and seasonal components of the series. Trend is also known as "gradient" or "rate of change" and seasonal is a repeating periodic fluctuations. Thus, this method is inapproriate for system which exhibit non-periodic fluctuations (e.g. stock market).
 
 This article describe how the Holt-Winter method makes forecast on time series data. The data to be used is the classic air passengers dataset from year 1949 to 1960.
 
