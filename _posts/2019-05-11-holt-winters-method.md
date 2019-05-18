@@ -230,4 +230,4 @@ show_visual(train_df[['#Passengers','holt']], test_df[['#Passengers','holt']], '
 ![png](/images/holt-winters-method_files/holt-winters-method_11_1.png)
 
 
-In this example, the smoothing factors selected are based on the optimized values found on the training set. However, sometime not optimizing the smoothing factors based on the training set may produce better result because the future in uncertain (bias-variance tradeoff). Furthermore, series don't usually increase/decrease infinitely. At some point of time it will start to slow down. Hence, adding a <b>damping factor</b> is preferable.
+In this example, the smoothing factors selected are based on the optimized values found on the training set. However, sometime not optimizing the smoothing factors based on the training set may produce better result because the future in uncertain (bias-variance tradeoff). Furthermore, series don't usually increase/decrease infinitely. At some point of time it will start to slow down. In that case, adding a <b>damping factor $$\phi$$</b> is usually advisable.
