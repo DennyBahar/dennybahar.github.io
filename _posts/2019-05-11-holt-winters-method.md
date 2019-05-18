@@ -167,7 +167,7 @@ show_visual(train_df[['#Passengers','SES']], test_df[['#Passengers','SES']], 'Si
 
 # Double Exponential Smoothing (Holt Method)
 
-Holt method is a forecasting method which consider the trend component to make prediction. This method perform exponential smoothing on the level values ($$l_t$$ is the expected $$y_t$$ or $$\hat y_t$$) and the trend values ($$b_t$$). A total of two exponential smoothing. Hence, it require two smoothing factors: $$\alpha$$ for the level component and $$\beta$$ for the trend component. The Holt method forecast $$\hat y_{t+m}$$ resemble a straight line equation ($$y=mx+c$$) where level ($$l_t$$) is the estimated intercept and trend ($$b_t$$) is the estimated rate of change at time t. 
+Holt method is a forecasting method which consider the trend component to make prediction. This method perform exponential smoothing on the level values ($$l_t$$ is the expected $$y_t$$ or $$\hat y_t$$) and the trend values ($$b_t$$). A total of two exponential smoothing. Hence, it require two smoothing factors: $$\alpha$$ for the level component and $$\beta$$ for the trend component. The Holt method forecast $$\hat y_{t+m}$$ resemble a straight line equation ($$y=mx+c$$) where level ($$l_t$$) is the estimated intercept and trend ($$b_t$$) is the estimated rate of change at time $$t$$. 
 
 <p style="text-align:center;">$$Level:\; l_t = \alpha y_t + (1-\alpha)(l_{t-1} + b_{t-1})$$</p>
 <p style="text-align:center;">$$Trend:\; b_t = \beta (l_t - l_{t-1}) + (1-\beta)b_{t-1}$$</p>
