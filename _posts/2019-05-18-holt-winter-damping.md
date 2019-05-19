@@ -303,7 +303,7 @@ A three years (36 months) out of sample forecasting is done. Again, the Hot-Wint
 
 # Holt-Winter With Damping
 
-Next, a damping factor, $\phi = 0.9$ is included. More damping means $$\phi\to 0$$ and less damping means $$\phi\to 1$$. No damping means $$\phi = 1$$. Hence, $$0 \le \phi \le 1$$
+Next, a damping factor, $$\phi = 0.9$$ is included. More damping means $$\phi\to 0$$ and less damping means $$\phi\to 1$$. No damping means $$\phi = 1$$. Hence, $$0 \le \phi \le 1$$
 
 
 ```python
