@@ -146,7 +146,7 @@ print(test.head())
 
 # Holt-Winter
 
-The first model is based on Holt-Winter method without damping $$(\phi = 1)$$. The smoothing factors will be optimized based on log-likelihood of the training set. The training set perform very well with relatively low RMSE and from the plot seems to fit quite well. The smoothing level $$(\alpha = 0.51)$$ suggest about equal weight between current and past level. Meanwhile, the smoothing slope $$(\beta = 0)$$ and seasonal $$(\gamma = 0.25)$$ have very low values which suggest more weights on the past values than the present.
+The first model is based on Holt-Winter method without damping $$(\phi = 1)$$. The smoothing factors will be optimized based on log-likelihood of the training set. The training set perform very well with relatively low RMSE and from the plot seems to fit quite well. The smoothing level $$(\alpha = 0.51)$$ suggest about equal weight between current and past level. Meanwhile, the smoothing slope $$(\beta = 0)$$ and seasonal $$(\gamma = 0.25)$$ have very low values which suggest past values are important.
 
 
 ```python
@@ -303,7 +303,7 @@ A three years (36 months) out of sample forecasting is done. Again, the Hot-Wint
 
 # Holt-Winter With Damping
 
-Next, a damping factor, $\phi = 0.9$ is included. More damping means $$\phi\to 0$$ and less damping means $$\phi\to 1$$. No damping means $$\phi = 1$$ while $$\phi > 1$$ means amplify.
+Next, a damping factor, $\phi = 0.9$ is included. More damping means $$\phi\to 0$$ and less damping means $$\phi\to 1$$. No damping means $$\phi = 1$$. Hence, $$0 \le \phi \le 1$$
 
 
 ```python
