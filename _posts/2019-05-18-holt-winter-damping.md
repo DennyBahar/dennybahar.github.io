@@ -303,7 +303,7 @@ A three years (36 months) out of sample forecasting is done. Again, the Hot-Wint
 
 # Holt-Winter With Damping
 
-Next, a damping factor, $$\phi = 0.9$$ is included. More damping means $$\phi\to 0$$ and less damping means $$\phi\to 1$$. No damping means $$\phi = 1$$. Hence, $$0 \le \phi \le 1$$
+Next, a damping factor, $$\phi = 0.9$$ is included. More damping means $$\phi\to 0$$ and less damping means $$\phi\to 1$$. No damping means $$\phi = 1$$. Hence, $$0 \le \phi \le 1$$.
 
 
 ```python
@@ -474,4 +474,4 @@ plt.legend();
 ![png](/images/holt-winter-damping_files/holt-winter-damping_30_0.png)
 
 
-For this time series, it seems to be more approriate to use Holt-Winter with damping. But, there is no gurantee that it will actually perform better in the actual future. However, if trend is expected to slow down including a damping factor is more approriate. If no expectation of slowing trend, there's no need to include damping factor.
+For this time series, it seems to be more approriate to use Holt-Winter with damping. But, there is no gurantee that it will actually perform better in the actual future. However, if trend is expected to slow down including a damping factor is more approriate. If no expectation of slowing trend, there's no need to include damping factor. In practice, $$\phi$$ is rarely 0.8 and value very close to 1 will have indistinguishable effect. Therefore, usually $$\phi$$ is constraint to be between 0.8 and 0.98.
